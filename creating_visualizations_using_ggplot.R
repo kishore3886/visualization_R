@@ -5,14 +5,17 @@
 
 # mtcars has observations of 32 cars with miles per gallon, cylinders, weight, no of gears etc.
 
+mtcars
 
 # Check structure of mtcars 
 
-
+str(mtcars)
 
 # This is the first plot using ggplot2 using the built-in data frame mtcars.
 # Plot cyl on x and mpg on y axis
+ggplot(mtcars, aes(x=cyl, y=mpg))+geom_point()
 
+ggplot(mtcars, aes(x=factor(cyl), y=mpg))+geom_point()
 
 # Identify which elements are in data, aes() and geom layers 
 # Note that there are no 5 or 7 cylinder cars, but the plot shows 5 and 7 on x axis. Why?
