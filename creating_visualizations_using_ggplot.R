@@ -39,3 +39,20 @@ ggplot(mtcars, aes(x=factor(cyl), y=mpg))+geom_point()
 # Should you use factor() here? 
 
 
+#In the mtcars data set, the variable am stands for automatic or manual transmission. 
+#The command for plotting am (x) versus mpg (y) is ggplot(mtcars, aes(x = ___,  y = ____  )) + geom_point()
+
+#What are the most appropriate values of x and y respectively?
+ggplot(mtcars, aes(x=am, y=mpg))+geom_point()
+ggplot(mtcars, aes(x=factor(am), y=mpg))+geom_point()
+
+
+#ggplot(mtcars, aes(x = wt,y = mpg, col = factor(cyl))) + geom_point()
+#In the above command, what would be the effect of replacing factor(cyl) by just cyl?
+par(mfrow = c(1,2))
+
+ggplot(mtcars, aes(x = wt,y = mpg, col = cyl)) + geom_point()
+
+ggplot(mtcars, aes(x = wt,y = mpg, col = factor(cyl))) + geom_point()
+
+
