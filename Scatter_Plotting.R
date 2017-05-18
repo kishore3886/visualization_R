@@ -53,4 +53,7 @@ ggplot(mtcars, aes(x = wt,y = mpg,col=hpsize=disp)) + geom_text(aes(label=cyl))
 #practice 
 ggplot(mtcars, aes(x = wt,y = mpg,col=hp,size=disp)) + geom_point()
 
+x <- rnorm(400, mean=50, sd=10)
+hist(x)
+mean(x)
 
