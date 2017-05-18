@@ -4,22 +4,31 @@
 # Let's play with the geom layer now
 
 # inside geom(), use arguments shape = 1 and size = 4
+ggplot(mtcars, aes(x = wt,y = mpg, col = factor(cyl))) + geom_point(shape=3)
 
 # Note that ALL points are of same shape and size, but not same color
 
 # This is because color is MAPPED to a variable, whereas shape and size are assigned 
 # constant values. That's why col is an aesthetic and shape/size are attributes
 
+ggplot(mtcars, aes(x = wt,y = mpg, size=hp)) + geom_point(shape=1)
 
 
 
 # Remove shape and size arguments from geom(); 
 
+ggplot(mtcars, aes(x = wt,y = mpg)) + geom_point(shape=1)
+
 # Use size to show car horsepower.
+
+ggplot(mtcars, aes(x = wt,y = mpg,size=hp)) + geom_point(shape=1)
+
+ggplot(mtcars, aes(x = wt,y = mpg,size=hp)) + geom_point(shape=1,color= "red")
 
 
 # Are you Mapping hp to size or assigning a particlar value to size? 
 
+ggplot(mtcars, aes(x = wt,y = mpg)) + geom_point(shape=1,size=4)
 
 
 
