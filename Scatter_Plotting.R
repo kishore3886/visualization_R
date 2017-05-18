@@ -23,7 +23,6 @@ ggplot(mtcars, aes(x = wt,y = mpg)) + geom_point(shape=1)
 
 ggplot(mtcars, aes(x = wt,y = mpg,size=hp)) + geom_point(shape=1)
 
-ggplot(mtcars, aes(x = wt,y = mpg,size=hp)) + geom_point(shape=1,color= "red")
 
 
 # Are you Mapping hp to size or assigning a particlar value to size? 
@@ -35,13 +34,14 @@ ggplot(mtcars, aes(x = wt,y = mpg)) + geom_point(shape=1,size=4)
 
 # -------------Let's practice a few more plots----------------------------------------------
 
+
 # Show four variables using size and colour
-
-
 # Map col to hp and size to disp 
-
-
 # disp means engine displacement
+ggplot(mtcars, aes(x = wt,y = mpg,col=hp,size=disp)) + geom_point()
+
+
+
 
 
 
