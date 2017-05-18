@@ -4,7 +4,7 @@
 ## Load the ggplot2 package using install.packages("ggplot2")
 
 
-
+install.packages("ggplot2")
 
 
 
@@ -13,3 +13,6 @@
 # You can type search() to see which packages are ready for use in your environment, 
 # ggplot2 should appear there now
 
+library(ggplot2)
+
+search()
