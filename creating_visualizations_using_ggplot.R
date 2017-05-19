@@ -55,4 +55,5 @@ ggplot(mtcars, aes(x = wt,y = mpg, col = cyl)) + geom_point()
 
 ggplot(mtcars, aes(x = wt,y = mpg, col = factor(cyl))) + geom_point()
 
+ggplot(mtcars, aes(x = wt,y = mpg, col = cyl)) + geom_point()
 

@@ -57,3 +57,6 @@ x <- rnorm(400, mean=50, sd=10)
 hist(x)
 mean(x)
 
+
+
+
