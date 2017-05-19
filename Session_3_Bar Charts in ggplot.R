@@ -1,4 +1,4 @@
-
+  
 ##-------------Bar Charts in ggplot--------------------
 
 # setting the ggplot object
