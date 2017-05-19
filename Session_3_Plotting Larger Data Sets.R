@@ -15,15 +15,15 @@ ggplot(diamonds,aes(x=carat,y=price))+geom_point()
 # Add geom_smooth() after the geom_point() to fit a smooth line, just use a + sign
 # Note that + sign simply adds a geometric layer geom_smooth over geom_point
 # You can add as many geometric layers as you wish!  
+ggplot(diamonds,aes(x=carat,y=price))+geom_point()+geom_smooth()
 
+ggplot(diamonds,aes(x=carat,y=price,col=clarity))+geom_smooth()
 
-
+diamonds
 
 
 # Show only the smooth line: Remove the geom_point layer
-
-
-
+ggplot(diamonds,aes(x=carat,y=price,col=clarity))+geom_point(alpha=0.4)
 
 # Map col to clarity in the aes() of ggplot
 # Diamonds come in different clarity levels, each having its own pricing methodology
@@ -41,7 +41,10 @@ ggplot(diamonds,aes(x=carat,y=price))+geom_point()
 
 # Try changing alpha from 0.9 to 0.1 (it's a fraction)
 
+ggplot(diamonds,aes(x=carat,y=price,col=clarity))+geom_point(alpha=0.9)
 
+ggplot(diamonds,aes(x=carat,y=price,col=clarity))+geom_point(alpha=0.7)
+ggplot(diamonds,aes(x=carat,y=price,col=clarity))+geom_point(alpha=0.5)
 
 
 ## Visual as Objects:
