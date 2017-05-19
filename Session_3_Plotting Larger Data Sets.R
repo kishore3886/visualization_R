@@ -52,10 +52,12 @@ ggplot(diamonds,aes(x=carat,y=price,col=clarity))+geom_point(alpha=0.5)
 dia_plot <- ggplot(diamonds, aes(x = carat, y = price))
 dia_plot2<-ggplot(diamonds,aes(x=carat,y=price,col=clarity))+geom_point(alpha=0.5)
 
-
+dia_plot
 
 # Expand dia_plot by adding geom_point() with alpha set to 0.2
-# dia_plot <- dia_plot + geom_point(alpha = 0.2)
 
+dia_plot <- dia_plot + geom_point(alpha = 0.8)
 
+dia_plot+geom_smooth()
+dia_plot+geom_curve()
 
