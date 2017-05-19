@@ -48,7 +48,9 @@ ggplot(diamonds,aes(x=carat,y=price,col=clarity))+geom_point(alpha=0.5)
 
 
 ## Visual as Objects:
-# dia_plot <- ggplot(diamonds, aes(x = carat, y = price))
+
+dia_plot <- ggplot(diamonds, aes(x = carat, y = price))
+dia_plot2<-ggplot(diamonds,aes(x=carat,y=price,col=clarity))+geom_point(alpha=0.5)
 
 
 
