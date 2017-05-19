@@ -44,6 +44,7 @@ ggplot(mtcars, aes(x = wt,y = mpg,col=hp,size=disp)) + geom_point()
 # Use geom_text (instead of geom_point) to display a text variable
 ggplot(mtcars, aes(x = wt,y = mpg,col=hpsize=disp)) + geom_text(aes(label=cyl))
 
+
 # This is the first time you are using an aes() function inside a geom layer
 # aes(label = cyl) MAPS the label to cylinder value of a data point 
 
@@ -52,11 +53,5 @@ ggplot(mtcars, aes(x = wt,y = mpg,col=hpsize=disp)) + geom_text(aes(label=cyl))
 
 #practice 
 ggplot(mtcars, aes(x = wt,y = mpg,col=hp,size=disp)) + geom_point()
-
-x <- rnorm(400, mean=50, sd=10)
-hist(x)
-mean(x)
-
-
 
 

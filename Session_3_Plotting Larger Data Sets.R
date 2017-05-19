@@ -3,13 +3,13 @@
 
 # See structure of diamonds data frame
 
-
+str(diamonds)
 
 
 # Plot carat on x and price on y axis; use geom_point
 # This is a plot with over 50,000 data points
 
-
+ggplot(diamonds,aes(x=carat,y=price))+geom_point()
 
 
 # Add geom_smooth() after the geom_point() to fit a smooth line, just use a + sign
