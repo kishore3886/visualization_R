@@ -61,3 +61,4 @@ dia_plot <- dia_plot + geom_point(alpha = 0.8)
 dia_plot+geom_smooth()
 dia_plot+geom_curve()
 
+
