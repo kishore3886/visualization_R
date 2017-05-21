@@ -1,19 +1,23 @@
 ## -------------ggplot - Histogram and More on Bar Charts---------------
-
+library(ggplot2)
 # Let's learn some more bars. Histograms are also types of bars, we just make them using geom_histogram.
 
-
+ggplot(mtcars, aes(x=cyl,fill=am)) +geom_bar()
 
 # BARS: Bars are made using geom_bar, which you would have plotted in the previous assignment
 # Bars take position arguments like stack, dodge, fill etc. which changes the appearance of bars drastically 
 # We'll use the three most common position arguments: "stack", "fill" and "dodge"
 
 
+ggplot(mtcars, aes(x=cyl,fill=am)) +geom_bar(position = "stack")
 
+ggplot(mtcars, aes(x=cyl,fill=factor(am))) +geom_bar(position = "stack")
 
-# Draw a bar plot of cyl, filled according to am
-# geom_bar has no argument, whcih makes it same as geom_bar(position = "stack")
+# Draw a bar plot of cyl, filled according to am .. 100% bargar graph
+# geom_bar has no argument, whcih makes it same as geom_bar(position = "stack") 
+ggplot(mtcars, aes(x=cyl,fill=factor(am))) +geom_bar(position = "fill")
 
+ggplot(mtcars, aes(x=cyl,fill=factor(am))) +geom_bar(position = "dodge")
 
 
 
@@ -55,6 +59,7 @@
 # Histograms use Bars, frequency polygons use Lines
 
 
+ggplot(mtcars, aes(x=mpg,fill=factor(cyl))) +geom_histogram(bandwidth=1)
 
 
 
@@ -78,6 +83,11 @@
 
 
 
+
+ggplot(mtcars, aes(x=mpg,fill=factor(cyl))) +geom_freqpoly(bandwidth=1)
+
+
+ggplot(mtcars, aes(x = mpg)) + geom_histogram(binwidth = 1, fill = "red")
 
 
 
